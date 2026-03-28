@@ -108,9 +108,9 @@
 
 - type: entity
   parent: [ClothingEyesBase, ShowSecurityIcons, ClothingEyesGlassesSunglasses, BaseSecurityContraband]
-  id: ClothingEyesGlassesSecJamjar
-  name: prescription secjar glasses
-  description: Jamjar glasses installed with a security HUD and flash protection. These ones have prescription lenses
+  id: ClothingEyesGlassesPrescSecJamjar
+  name: security-issued prescription Jamjars
+  description: These retro glasses remind you of a time when you could see farther than five feet in front of you
   components:
   - type: Sprite
     sprite: _Omu/Clothing/Eyes/Glasses/jamjar_sec.rsi
@@ -118,8 +118,8 @@
     sprite: _Omu/Clothing/Eyes/Glasses/jamjar_sec.rsi
   - type: VisionCorrection
   - type: Construction
-    graph: ClothingEyesGlassesSecJJ
-    node: gogglesJamJarSec
+    graph: ClothingEyesGlassesPrescSecJJ
+    node: gogglesPrescJamJarSec
   - type: Tag
     tags:
     - WhitelistChameleon
@@ -127,8 +127,8 @@
 
 - type: entity
   parent: [ClothingEyesBase, ShowSecurityIcons, ClothingEyesGlassesSunglasses, BaseSecurityContraband]
-  id: ClothingEyesGlassesSecJar
-  name: secjar glasses
+  id: ClothingEyesGlassesSecJamjar
+  name: security-issued jamjar glasses
   description: These retro glasses reminds you of 1984
   components:
   - type: Sprite
@@ -155,6 +155,9 @@
       - state: inhand-right
       - state: inhand-right-unshaded
         shader: unshaded
+  - type: Construction
+    graph: ClothingEyesGlassesSecJJ
+    node: gogglesJamJarSec
   - type: Tag
     tags:
     - WhitelistChameleon

@@ -39,6 +39,14 @@
   objectType: Item
 
 - type: construction
+  id: GlassesPrescJamJarSec
+  graph: ClothingEyesGlassesPrescSecJJ
+  startNode: start
+  targetNode: gogglesPrescJamJarSec
+  category: construction-category-clothing
+  objectType: Item
+
+- type: construction
   id: GlassesJamJarDiag
   graph: ClothingEyesGlassesDiagJJ
   startNode: start
