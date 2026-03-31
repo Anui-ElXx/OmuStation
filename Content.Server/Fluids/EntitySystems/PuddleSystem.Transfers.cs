@@ -13,12 +13,15 @@ using Content.Shared.DragDrop;
 using Content.Goobstation.Maths.FixedPoint;
 using Content.Shared.Fluids;
 using Content.Shared.Nutrition.EntitySystems;
+using Content.Server.Popups; // Funky
 
 namespace Content.Server.Fluids.EntitySystems;
 
 public sealed partial class PuddleSystem
 {
     [Dependency] private readonly OpenableSystem _openable = default!;
+    [Dependency] private readonly OpenableSystem _openable = default!;
+    [Dependency] private readonly PopupSystem _popups = default!;
 
     private void InitializeTransfers()
     {
@@ -29,7 +32,7 @@ public sealed partial class PuddleSystem
     {
         if (!_actionBlocker.CanComplexInteract(args.User))
         {
-            _popups.PopupEntity(Loc.GetString("mopping-system-no-hands"), args.User, args.User);
+            Popups.PopupEntity(Loc.GetString("mopping-system-empty", ("used", entity.Owner)), entity, args.User);
             return;
         }
 

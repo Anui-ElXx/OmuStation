@@ -132,11 +132,15 @@ using Content.Shared.Chemistry.Reaction;
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Forensics;
 using Content.Shared.Forensics.Components;
+using Content.Shared.Inventory; // Funky
+using Content.Shared.Fluids; // Funky
 
 namespace Content.Server.Body.Systems;
 
 public sealed class BloodstreamSystem : SharedBloodstreamSystem
 {
+    [Dependency] private readonly EntityLookupSystem _lookup = default!;
+
     public override void Initialize()
     {
         base.Initialize();
@@ -168,6 +172,31 @@ public sealed class BloodstreamSystem : SharedBloodstreamSystem
         // Fill blood solution with BLOOD
         // The DNA string might not be initialized yet, but the reagent data gets updated in the GenerateDnaEvent subscription
         bloodSolution.AddReagent(new ReagentId(entity.Comp.BloodReagent, GetEntityBloodData(entity.Owner)), entity.Comp.BloodMaxVolume - bloodSolution.Volume);
+
+        // Funkystation starts
+        // stain clothes on bleed
+        var stainEv = new SpilledOnEvent(entity.Owner, tempSolution);
+        RaiseLocalEvent(entity.Owner, stainEv);
+
+        // stain neighbors
+        var xform = Transform(entity.Owner);
+        var lookup = _lookup.GetEntitiesInRange(xform.Coordinates, 1.5f);
+        foreach (var ent in lookup)
+        {
+            if (ent == entity.Owner)
+                continue;
+
+            // only try staining things that have an inventory
+            // event is relayed by InventoryComponent
+            if (!HasComp<InventoryComponent>(ent))
+                continue;
+
+            var neighborStainEv = new SpilledOnEvent(entity.Owner, tempSolution);
+            RaiseLocalEvent(ent, neighborStainEv);
+
+            if (tempSolution.Volume <= 0)
+                break;
+        } // Funkystation ends
     }
 
     // forensics is not predicted yet
