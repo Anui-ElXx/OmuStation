@@ -4,8 +4,8 @@ meta:
   engineVersion: 266.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/22/2026 15:46:38
-  entityCount: 35918
+  time: 03/29/2026 13:23:53
+  entityCount: 35920
 maps:
 - 1
 grids:
@@ -103741,6 +103741,14 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 25.5,-29.5
       parent: 2
+- proto: ComputerShuttleSalvage
+  entities:
+  - uid: 35919
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 25.5,-28.5
+      parent: 2
 - proto: ComputerSolarControl
   entities:
   - uid: 16683
@@ -194340,6 +194348,13 @@ entities:
     components:
     - type: Transform
       pos: -69.5,25.5
+      parent: 2
+- proto: SpawnPointSecuritySergeant
+  entities:
+  - uid: 35920
+    components:
+    - type: Transform
+      pos: -72.5,24.5
       parent: 2
 - proto: SpawnPointServiceWorker
   entities:

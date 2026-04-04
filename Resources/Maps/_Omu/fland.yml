@@ -4,8 +4,8 @@ meta:
   engineVersion: 266.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/22/2026 15:45:36
-  entityCount: 36105
+  time: 03/29/2026 13:12:18
+  entityCount: 36107
 maps:
 - 1
 grids:
@@ -21427,7 +21427,7 @@ entities:
       pos: 72.5,-11.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -73498.54
+      secondsUntilStateChange: -73574.13
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -94522,6 +94522,30 @@ entities:
     - type: Transform
       pos: 67.49193,-41.442646
       parent: 2
+    - type: GroupExamine
+      group:
+      - hoverMessage: ""
+        contextText: verb-examine-group-other
+        icon: /Textures/Interface/examine-star.png
+        components:
+        - Armor
+        - ClothingSpeedModifier
+        entries:
+        - message: >-
+            It provides the following protection:
+
+            - [color=yellow]This armor reduces incoming damage to your groin[/color]
+
+            - [color=yellow]Blunt[/color] damage reduced by [color=lightblue]5%[/color].
+
+            - [color=yellow]Slash[/color] damage reduced by [color=lightblue]5%[/color].
+
+            - [color=yellow]Piercing[/color] damage reduced by [color=lightblue]5%[/color].
+
+            - [color=orange]Explosion[/color] damage [color=white]to contents[/color] reduced by [color=lightblue]90%[/color].
+          priority: 0
+          component: Armor
+        title: null
 - proto: ClothingBeltUtility
   entities:
   - uid: 14422
@@ -97523,6 +97547,14 @@ entities:
     components:
     - type: Transform
       pos: 14.5,-29.5
+      parent: 2
+- proto: ComputerShuttleSalvage
+  entities:
+  - uid: 36107
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 19.5,-32.5
       parent: 2
 - proto: ComputerSolarControl
   entities:
@@ -193986,6 +194018,13 @@ entities:
     components:
     - type: Transform
       pos: 32.5,25.5
+      parent: 2
+- proto: SpawnPointSecuritySergeant
+  entities:
+  - uid: 36106
+    components:
+    - type: Transform
+      pos: 30.5,24.5
       parent: 2
 - proto: SpawnPointServiceWorker
   entities:
