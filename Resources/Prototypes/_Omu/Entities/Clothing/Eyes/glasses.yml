@@ -50,7 +50,7 @@
   parent: [ClothingEyesBase, ShowMedicalIcons]
   id: ClothingEyesGlassesMedJamjar
   name: medical jamjar glasses
-  description: Jamjar glasses installed with a medical HUD.
+  description: These retro glasses remind you of all the money you wasted in medical school.
   components:
   - type: Sprite
     sprite: _Omu/Clothing/Eyes/Glasses/jamjar_med.rsi
@@ -68,7 +68,7 @@
   parent: [ClothingEyesBase]
   id: ClothingEyesGlassesDiagJamjar
   name: diagnostic jamjar glasses
-  description: Jamjar glasses installed with a diagnostic HUD.
+  description: These retro glasses remind you that machines are often easier to understand than people.
   components:
   - type: Sprite
     sprite: _Omu/Clothing/Eyes/Glasses/jamjar_diag.rsi
@@ -91,7 +91,7 @@
   parent: [ClothingEyesBase]
   id: ClothingEyesGlassesMesonJamjar
   name: meson jamjar glasses
-  description: Jamjar glasses installed with welding protection.
+  description: These retro glasses remind you that walls are more of a suggestion than a barrier.
   components:
   - type: Sprite
     sprite: _Omu/Clothing/Eyes/Glasses/jamjar_meson.rsi
@@ -107,7 +107,7 @@
   - type: EyeProtection
 
 - type: entity
-  parent: [ClothingEyesBase, ShowSecurityIcons, ClothingEyesGlassesSunglasses, BaseSecurityContraband]
+  parent: ClothingEyesGlassesSecurity
   id: ClothingEyesGlassesPrescSecJamjar
   name: security-issued prescription Jamjars
   description: These retro glasses remind you of a time when you could see farther than five feet in front of you
@@ -120,16 +120,12 @@
   - type: Construction
     graph: ClothingEyesGlassesPrescSecJJ
     node: gogglesPrescJamJarSec
-  - type: Tag
-    tags:
-    - WhitelistChameleon
-    - HamsterWearable
 
 - type: entity
-  parent: [ClothingEyesBase, ShowSecurityIcons, ClothingEyesGlassesSunglasses, BaseSecurityContraband]
+  parent: ClothingEyesGlassesSecurity
   id: ClothingEyesGlassesSecJamjar
   name: security-issued jamjar glasses
-  description: These retro glasses reminds you of 1984
+  description: These retro glasses reminds you of 1984.
   components:
   - type: Sprite
     sprite: _Omu/Clothing/Eyes/Glasses/secjar_glasses.rsi
@@ -158,15 +154,12 @@
   - type: Construction
     graph: ClothingEyesGlassesSecJJ
     node: gogglesJamJarSec
-  - type: Tag
-    tags:
-    - WhitelistChameleon
 
 - type: entity
   parent: [ClothingEyesBase, ShowSecurityIcons, ShowMedicalIcons, BaseCentcommContraband]
   id: ClothingEyesGlassesCentComJamjar
   name: central command jamjar glasses
-  description: Actshually, it's not a sin if you're nerdier than them..!
+  description: These retro glasses remind you that the view from the top is always better, especially when you are already there.
   components:
   - type: Sprite
     sprite: _Omu/Clothing/Eyes/Glasses/jamjar_centcom.rsi
