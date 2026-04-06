@@ -300,6 +300,16 @@
   - WeaponPistolMk58Gold
 
 - type: loadoutGroup
+  id: SecurityEyeGlasses
+  name: loadout-group-security-eyes
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - SecurityClothingEyes
+  - SecurityClothingEyesJamjars
+  - SecurityClothingEyesPrescJamjars
+
+- type: loadoutGroup
   id: TrinketsSecuritySergeant
   name: loadout-group-trinkets-job
   minLimit: 1
@@ -375,6 +385,8 @@
   loadouts:
   - DetectiveClothingEyesGlassesSecurity
   - DetectiveClothingEyesGlassesNoir
+  - SecurityClothingEyesJamjars
+  - SecurityClothingEyesPrescJamjars
 
 # And... a separate one for brigmed cause they cant put the terminus in the suit storage
 - type: loadoutGroup

@@ -1,3 +1,22 @@
+# Eyeglasses - For Secoff, Ward, HOS and Sergeant.
+- type: loadout
+  id: SecurityClothingEyes
+  equipment:
+    eyes: ClothingEyesGlassesSecurity
+  groupBy: "Security glasses"
+
+- type: loadout
+  id: SecurityClothingEyesJamjars
+  equipment:
+    eyes: ClothingEyesGlassesSecJamjar
+  groupBy: "Security glasses"
+
+- type: loadout
+  id: SecurityClothingEyesPrescJamjars
+  equipment:
+    eyes: ClothingEyesGlassesPrescSecJamjar
+  groupBy: "Security glasses"
+
 # Jumpsuits / Jumpskirts
 - type: loadout
   id: BlackRedUniform

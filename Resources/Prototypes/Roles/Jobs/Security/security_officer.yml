@@ -121,7 +121,7 @@
 - type: startingGear
   id: SecurityOfficerGear
   equipment:
-    eyes: ClothingEyesGlassesSecurity
+    #eyes: ClothingEyesGlassesSecurity - Omu edit (moved to loadouts)
     ears: ClothingHeadsetAltSecurityRegular # Goobstation
     #pocket1: OfficerGunCase #Omu, item in loadout instead
   storage:

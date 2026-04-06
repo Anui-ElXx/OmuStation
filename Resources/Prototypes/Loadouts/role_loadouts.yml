@@ -592,6 +592,7 @@
   id: JobHeadOfSecurity
   groups:
   - HeadofSecurityHead
+  - SecurityEyeGlasses # Omu edit
   - HeadofSecurityNeck
   - HeadofSecurityJumpsuit
   - SecurityBackpack
@@ -615,6 +616,7 @@
   id: JobWarden
   groups:
   - WardenHead
+  - SecurityEyeGlasses # Omu edit
   - WardenJumpsuit
   - SecurityBackpack
   - SecurityMelee # Goobstation
@@ -637,6 +639,7 @@
   id: JobSecurityOfficer
   groups:
   - SecurityHead
+  - SecurityEyeGlasses # Omu edit
   - SecurityJumpsuit
   - SecurityBackpack
   - SecurityMelee # Goobstation
