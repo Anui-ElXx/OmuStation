@@ -178,6 +178,11 @@
     templateId: arachnid
     speciesId: arachnid #Goobedit - Fix Arachnid specific textures
   - type: IgnoreSpiderWeb # Goobstation
+  - type: EmoteOnFinalDamage
+    damageThreshold: 12
+    emoteChance: 0.6
+    emotes:
+    - Scream
 
 - type: entity
   parent: BaseSpeciesDummy

@@ -291,7 +291,7 @@
           32:
             sprite: Mobs/Species/Vox/displacement.rsi
             state: shoes
-      outerClothing: # Goob 
+      outerClothing: # Goob
         sizeMaps:
           32:
             sprite: Mobs/Species/Vox/displacement.rsi
@@ -359,7 +359,7 @@
   - type: Carriable # Goobstation
   - type: CPRTraining # Goobstation - Just give to everyone! This ain't MRP.
   - type: GrabIntent # wilted rose
-  - type: Grabbable 
+  - type: Grabbable
   # Goobstation end
   - type: Hands
     leftHandDisplacement:
@@ -380,6 +380,11 @@
     understands:
       - TauCetiBasic
       - NewKinPidgin        # Vox language from Floofstation
+  - type: EmoteOnFinalDamage
+    damageThreshold: 12
+    emoteChance: 0.7
+    emotes:
+    - Scream
 
 - type: entity
   parent: BaseSpeciesDummy

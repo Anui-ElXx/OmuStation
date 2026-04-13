@@ -120,6 +120,11 @@
   - type: InnateMiningScannerViewer # Frontier
     pingSound: null
     viewRange: 3 # Goob value
+  - type: EmoteOnFinalDamage
+    damageThreshold: 12
+    emoteChance: 0.7
+    emotes:
+    - Pain
 
 - type: entity
   parent: BaseSpeciesDummy

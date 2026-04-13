@@ -127,4 +127,7 @@
   category: MentalTraits # Omustation - Remake EE Traits system - EE traits categories
   components:
   - type: PainNumbness
+  - type: Tag
+    tags:
+    - NumbTrait
   globalCost: -2 # Omustation - Remake EE Traits system - global trait points cost

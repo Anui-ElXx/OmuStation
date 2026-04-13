@@ -152,6 +152,11 @@
             state: jumpsuit-female
   - type: Sprinter # Goob Change: human major
     staminaDrainRate: 8
+  - type: EmoteOnFinalDamage
+    damageThreshold: 12
+    emoteChance: 0.7
+    emotes:
+    - Pain
 
 
 - type: entity

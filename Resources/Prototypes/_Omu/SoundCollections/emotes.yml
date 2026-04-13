@@ -11,3 +11,23 @@
   - /Audio/_Omu/Voice/Reptilian/humanoid_lizard_scream_2.ogg
   - /Audio/_Omu/Voice/Reptilian/humanoid_lizard_scream_3.ogg
   - /Audio/_Omu/Voice/Reptilian/humanoid_lizard_scream_4.ogg
+
+# I feel pain, and I must scream.
+
+- type: soundCollection
+  id: FemalePainScream
+  files:
+  - /Audio/_Omu/Voice/Human/Female/human_female_pain_1.ogg
+  - /Audio/_Omu/Voice/Human/Female/human_female_pain_2.ogg
+  - /Audio/_Omu/Voice/Human/Female/human_female_pain_3.ogg
+  - /Audio/_Omu/Voice/Human/Female/human_female_pain_4.ogg
+  - /Audio/_Omu/Voice/Human/Female/human_female_pain_5.ogg
+
+- type: soundCollection
+  id: MalePainScream
+  files:
+  - /Audio/_Omu/Voice/Human/Male/human_male_pain_1.ogg
+  - /Audio/_Omu/Voice/Human/Male/human_male_pain_2.ogg
+  - /Audio/_Omu/Voice/Human/Male/human_male_pain_3.ogg
+  - /Audio/_Omu/Voice/Human/Male/human_male_pain_4.ogg
+  - /Audio/_Omu/Voice/Human/Male/human_male_pain_5.ogg

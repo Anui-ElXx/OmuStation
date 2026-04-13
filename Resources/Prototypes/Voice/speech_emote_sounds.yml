@@ -103,6 +103,8 @@
       path: /Audio/_Goobstation/Voice/Human/gulp.ogg
     Surprised: # Goob
       path: /Audio/_Goobstation/Voice/surprised.ogg
+    Pain: # Omu
+      collection: MalePainScream
 
 - type: emoteSounds
   id: FemaleHuman
@@ -149,6 +151,8 @@
       path: /Audio/_Goobstation/Voice/Human/gulp.ogg
     Surprised: # Goob
       path: /Audio/_Goobstation/Voice/surprised.ogg
+    Pain: # Omu
+      collection: FemalePainScream
 
 - type: emoteSounds ## GOOB CONTENT START
   id: MonkeyMode
@@ -562,6 +566,8 @@
       path: /Audio/_Goobstation/Voice/Human/gulp.ogg
     Surprised: # Goob
       path: /Audio/_Goobstation/Voice/surprised.ogg
+    Pain: # Omu
+      collection: MalePainScream
   params:
     variation: 0.125
     pitch: 0.75
@@ -609,6 +615,8 @@
       path: /Audio/_Goobstation/Voice/Human/gulp.ogg
     Surprised: # Goob
       path: /Audio/_Goobstation/Voice/surprised.ogg
+    Pain: # Omu
+      collection: FemalePainScream
   params:
     variation: 0.125
     pitch: 0.75

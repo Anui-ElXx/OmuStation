@@ -1,0 +1,18 @@
+- type: emote
+  id: Pain
+  name: chat-emote-name-pain
+  category: Vocal
+  icon: Interface/Emotes/scream.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+    tags:
+    - NumbTrait
+  chatMessages: ["chat-emote-msg-pain"]
+  chatTriggers:
+  - Screams in pain
+  - Lets out a painful scream
+  - Cries out in pain

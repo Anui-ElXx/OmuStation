@@ -166,6 +166,11 @@
       - Shard
   - type: SpeedModifierImmunity
   - type: Rootable
+  - type: EmoteOnFinalDamage
+    damageThreshold: 12
+    emoteChance: 0.7
+    emotes:
+    - Scream
 
 - type: entity
   parent: BaseSpeciesDummy
