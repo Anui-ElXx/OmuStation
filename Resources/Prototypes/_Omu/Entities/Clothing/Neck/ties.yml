@@ -1,0 +1,40 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckTieDisco
+  name: horrific necktie
+  description: A garish, horribly vivid, multicoloured necktie. You feel as if this !
+  components:
+  - type: Sprite
+    sprite: _Funkystation/Clothing/Neck/Ties/discotie.rsi
+  - type: Clothing
+    sprite: _Funkystation/Clothing/Neck/Ties/discotie.rsi
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: false
+    allowMovement: false
+    name: ghost-role-information-horrific-necktie-name
+    description: ghost-role-information-horrific-necktie-description
+    rules: ghost-role-information-familiar-rules
+  - type: BlockMovement
+#  - type: Speech
+#    speechVerb: Default
+#    speechSounds: Tenor
+  - type: GhostTakeoverAvailable
+#  - type: Vocal
+#    sounds:
+#      Unsexed: MaleHuman
+  - type: Grammar
+    attributes:
+      proper: false
+      gender: male
+  - type: CollectiveMind
+    defaultChannel: DiscoDetective
+    respectAccents: true
+    channels:
+    - DiscoDetective
+  - type: ClothingGrantCollectiveMind
+    minds:
+    - DiscoDetective
+    defaultChannel: DiscoDetective
+  - type: BoganAccent
+
