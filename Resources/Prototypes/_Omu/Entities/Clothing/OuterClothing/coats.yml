@@ -249,3 +249,75 @@
   - type: TemperatureProtection
     heatingCoefficient: 0.1
     coolingCoefficient: 0.1
+
+- type: entity
+  parent: ClothingOuterCoatDetective
+  id: ClothingOuterCoatPatrolDetective
+  name: detective's patrol coat
+  description: A heavy-duty coat bearing Nanotrasen's emblem on the back. Wearing this makes you feel connected to the station itself.
+  components:
+  - type: Sprite # when making this I used 64x64 instead of 32x32 my bad I forgot, I had to downscale it
+    sprite: _Omu/Clothing/OuterClothing/Coats/detectivepatrolcoat.rsi
+  - type: Clothing
+    sprite: _Omu/Clothing/OuterClothing/Coats/detectivepatrolcoat.rsi
+  - type: StorageFill
+    contents:
+    - id: SmokingPipeFilledTobacco
+    - id: FlippoEngravedLighter
+  - type: UserInterface
+    interfaces:
+      enum.StationMapUiKey.Key:
+        type: StationMapBoundUserInterface
+        requireInputValidation: false
+      enum.StorageUiKey.Key: # re-added from parent
+        type: StorageBoundUserInterface
+  - type: IntrinsicUI
+    uis:
+      enum.StationMapUiKey.Key:
+        toggleAction: ActionShowStationMap
+  - type: StationMap # +1 Shivers: Know thy Station
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: false # only able to talk inside the collective mind
+    allowMovement: false
+    name: ghost-role-information-detective-patrol-coat-name
+    description: ghost-role-information-detective-patrol-coat-description
+    rules: ghost-role-information-detective-patrol-coat-rules
+    mindRoles:
+    - MindRoleGhostRoleFamiliar
+  - type: GhostTakeoverAvailable
+  - type: BlockMovement
+  - type: Examiner
+  - type: Grammar
+    attributes:
+      proper: false
+      gender: male
+  - type: MobState # This shitcode allows the role to pop back up after whoever had it last ghosts out of it, same as PAI
+    allowedStates:
+    - Alive
+  - type: CollectiveMind # gives the coat access to the collective mind
+    defaultChannel: DiscoDetective
+    respectAccents: true
+    channels:
+    - DiscoDetective
+    speechSounds: DetectivePatrolCoat
+    speechSoundsVariation: 0
+  - type: ClothingGrantCollectiveMind # Grant access to the collective mind to whoever wears the coat
+    minds:
+    - DiscoDetective
+    defaultChannel: DiscoDetective
+  - type: ThermalVision # + 1 Spirit D'Corps: Taking the hallways back
+    isEquipment: true  # I know that the maints will have problem with this, but the radius is smaller than normal and the cooldown has been increased to 30 seconds, so it's not a big deal
+    pulseTime: 1
+    lightRadius: 1.5
+    color: "#33469c"
+    drawOverlay: true
+    overlayOpacity: 0.45
+    toggleAction: PulseDetectiveVision  # Uses a new pulse action (30s cooldown)
+    activateSound: null
+    deactivateSound: null
+  - type: LanguageKnowledge # is there a way to make it so it only knows whatever languages the player knows?
+    speaks:
+    - TauCetiBasic
+    understands:
+    - TauCetiBasic

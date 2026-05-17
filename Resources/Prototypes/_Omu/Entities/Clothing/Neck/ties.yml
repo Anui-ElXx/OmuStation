@@ -2,7 +2,7 @@
   parent: ClothingNeckBase
   id: ClothingNeckTieDisco
   name: horrific necktie
-  description: A garish, horribly vivid, multicoloured necktie. You feel as if this !
+  description: A garish, horribly vivid, multicoloured necktie. It's your friend now, you will betray it if you change it for a bodycam.
   components:
   - type: Sprite
     sprite: _Funkystation/Clothing/Neck/Ties/discotie.rsi
@@ -14,15 +14,9 @@
     allowMovement: false
     name: ghost-role-information-horrific-necktie-name
     description: ghost-role-information-horrific-necktie-description
-    rules: ghost-role-information-familiar-rules
+    rules: ghost-role-information-detective-horrific-necktie-rules
   - type: BlockMovement
-#  - type: Speech
-#    speechVerb: Default
-#    speechSounds: Tenor
   - type: GhostTakeoverAvailable
-#  - type: Vocal
-#    sounds:
-#      Unsexed: MaleHuman
   - type: Grammar
     attributes:
       proper: false
@@ -32,9 +26,15 @@
     respectAccents: true
     channels:
     - DiscoDetective
+    speechSounds: HorrificNecktie
+    speechSoundsVariation: 0
   - type: ClothingGrantCollectiveMind
     minds:
     - DiscoDetective
     defaultChannel: DiscoDetective
   - type: HorrificAccent
-
+  - type: LanguageKnowledge
+    speaks:
+    - TauCetiBasic # is there a way to make it so it only knows whatever languages the player knows?
+    understands:
+    - TauCetiBasic

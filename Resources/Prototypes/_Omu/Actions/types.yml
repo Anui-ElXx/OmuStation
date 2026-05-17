@@ -1,0 +1,9 @@
+- type: entity
+  id: PulseDetectiveVision
+  parent: ToggleThermalVision
+  name: Use detective's vision
+  description: Connect with the station and feel what is around you
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    useDelay: 20

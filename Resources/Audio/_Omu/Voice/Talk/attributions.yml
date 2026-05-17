@@ -1,0 +1,19 @@
+- files: ["disco_1.ogg"]
+  license: "CC-BY-4.0"
+  copyright: "Sounds comes from the game 'Disco Elysium'"
+  source: "https://www.youtube.com/watch?v=xlH66Wq_OAc"
+
+- files: ["disco_2.ogg"]
+  license: "CC-BY-4.0"
+  copyright: "Sounds comes from the game 'Disco Elysium'"
+  source: "https://www.youtube.com/watch?v=xlH66Wq_OAc"
+
+- files: ["disco_3.ogg"]
+  license: "CC-BY-4.0"
+  copyright: "Sounds comes from the game 'Disco Elysium'"
+  source: "https://www.youtube.com/watch?v=xlH66Wq_OAc"
+
+  - files: [ "disco_4.ogg" ]
+    license: "CC-BY-4.0"
+    copyright: "Sounds comes from the game 'Disco Elysium'"
+    source: "https://www.youtube.com/watch?v=xlH66Wq_OAc"

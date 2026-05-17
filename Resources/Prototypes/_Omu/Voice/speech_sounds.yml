@@ -1,0 +1,17 @@
+﻿- type: speechSounds
+  id: HorrificNecktie
+  saySound:
+    path: /Audio/_Omu/Voice/Talk/disco_4.ogg
+  askSound:
+    path: /Audio/_Omu/Voice/Talk/disco_4.ogg
+  exclaimSound:
+    path: /Audio/_Omu/Voice/Talk/disco_4.ogg
+
+- type: speechSounds
+  id: DetectivePatrolCoat
+  saySound:
+    path: /Audio/_Omu/Voice/Talk/disco_3.ogg
+  askSound:
+    path: /Audio/_Omu/Voice/Talk/disco_1.ogg
+  exclaimSound:
+    path: /Audio/_Omu/Voice/Talk/disco_2.ogg
