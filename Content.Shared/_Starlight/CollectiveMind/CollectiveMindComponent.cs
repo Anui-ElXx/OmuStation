@@ -9,6 +9,7 @@
 
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
+using Content.Shared.Speech; // Omu
 
 namespace Content.Shared._Starlight.CollectiveMind
 {
@@ -32,6 +33,12 @@ namespace Content.Shared._Starlight.CollectiveMind
 
         [DataField]
         public bool RespectAccents = false;
+
+        [DataField] // Omu
+        public ProtoId<SpeechSoundsPrototype>? SpeechSounds = null;
+
+        [DataField] // Omu
+        public float? SpeechSoundsVariation = null;
 
         // Goobstation
         /// <summary>

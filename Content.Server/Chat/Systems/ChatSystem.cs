@@ -429,6 +429,10 @@ public sealed partial class ChatSystem : SharedChatSystem
                 }
 
                 SendCollectiveMindChat(source, modMessage, channel);
+                // Omu start
+                if (channel != null)
+                    RaiseLocalEvent(source, new CollectiveMindSpokeEvent(channel.ID, modMessage)); // raises speechsound event for members of the collectivemind
+                // Omu end
                 return;
             }
         }

@@ -34,4 +34,7 @@ public sealed partial class CollectiveMindPrototype : IPrototype
 
     [DataField]
     public bool ShowNames = true;
+
+    [DataField("speechSounds")] // Omu
+    public ProtoId<Content.Shared.Speech.SpeechSoundsPrototype>? SpeechSounds { get; private set; } = null;
 }
