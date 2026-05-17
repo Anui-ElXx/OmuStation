@@ -1,22 +1,20 @@
 accent-horrific-prefix-1 = This is it, bratan,
 accent-horrific-prefix-2 = Say it with me:
-accent-horrific-prefix-3 = Listen closely, bratan -
+accent-horrific-prefix-3 = Listen closely, bratan:
 accent-horrific-prefix-4 = Don't sweat it, bratan,
 accent-horrific-prefix-5 = Oh yes, bratan!
-accent-horrific-prefix-6 = Limbic System reporting in -
+accent-horrific-prefix-6 = Limbic System reporting in:
 accent-horrific-prefix-7 = Your tie speaks, detective-extraordinaire -
 accent-horrific-prefix-8 = This is pure instinct talking, bratan -
 
 accent-horrific-suffix-1 = , and that is style!
 accent-horrific-suffix-2 = , destiny demands it.
-accent-horrific-suffix-3 = , as foretold by the ancient reptilian brain.
-accent-horrific-suffix-4 = , trust me - I know style.
 accent-horrific-suffix-5 = , and get that PARTY going!
 accent-horrific-suffix-6 = , like a true superstar
 
 accent-horrific-words-1 = brother
 accent-horrific-words-replace-1 = bratan
-``
+
 accent-horrific-words-2 = friend
 accent-horrific-words-replace-2 = bratan
 
@@ -99,7 +97,7 @@ accent-horrific-words-28 = shuttle
 accent-horrific-words-replace-28 = great departure machine
 
 accent-horrific-words-29 = criminal
-accent-horrific-words-replace-29 = lawbreaker extraordinaire
+accent-horrific-words-replace-29 = criminal extraordinaire
 
 accent-horrific-words-30 = wizard
 accent-horrific-words-replace-30 = robe-wearing reality bender
@@ -148,3 +146,12 @@ accent-horrific-words-replace-44 = gloriously intoxicated
 
 accent-horrific-words-45 = assistant
 accent-horrific-words-replace-45 = sidekick
+
+accent-horrific-words-46 = fight it
+accent-horrific-words-replace-46 = duke it out
+
+accent-horrific-words-47 = fighting
+accent-horrific-words-replace-47 = duking it out
+
+accent-horrific-words-48 = fightint it
+accent-horrific-words-replace-48 = duking it out

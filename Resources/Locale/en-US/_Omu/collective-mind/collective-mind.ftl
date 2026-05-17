@@ -1,1 +1,1 @@
-collective-mind-Disco = The Pale-Adjacent Limbic System
+collective-mind-Disco = The Limbic System
