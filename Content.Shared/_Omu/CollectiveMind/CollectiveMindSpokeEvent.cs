@@ -1,6 +1,7 @@
 using Robust.Shared.Prototypes;
+using Content.Shared._Starlight.CollectiveMind;
 
-namespace Content.Shared._Starlight.CollectiveMind;
+namespace Content.Shared._Omu.CollectiveMind;
 
 /// <summary>
 /// raised on the entity after it sends a message through a collective mind channel

@@ -6,4 +6,4 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
-    useDelay: 20
+    useDelay: 120

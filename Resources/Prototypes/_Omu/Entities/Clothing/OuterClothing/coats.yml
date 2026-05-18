@@ -307,14 +307,14 @@
     - DiscoDetective
     defaultChannel: DiscoDetective
   - type: ThermalVision # + 1 Spirit D'Corps: Taking the hallways back
-    isEquipment: true  # I know that the maints will have problem with this, but the radius is smaller than normal and the cooldown has been increased to 30 seconds, so it's not a big deal
-    pulseTime: 1
+    isEquipment: true  # I know that the maints will have problem with this, but the cooldown has been set to 120 seconds, so it's not a big deal
+    pulseTime: 2.5
     lightRadius: 1.5
-    color: "#33469c"
+    color: "#5b9c30"
     drawOverlay: true
-    overlayOpacity: 0.45
-    toggleAction: PulseDetectiveVision  # Uses a new pulse action (30s cooldown)
-    activateSound: null
+    overlayOpacity: 0.65
+    toggleAction: PulseDetectiveVision  # Uses a new pulse action (120s cooldown)
+    activateSound: /Audio/_Omu/Items/Coat/DiscoSuccess.ogg
     deactivateSound: null
   - type: LanguageKnowledge # is there a way to make it so it only knows whatever languages the player knows?
     speaks:

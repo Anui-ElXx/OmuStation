@@ -6,8 +6,9 @@ using Robust.Shared.Audio;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
+ using Content.Shared._Omu.CollectiveMind;
 
-namespace Content.Server._Starlight.CollectiveMind;
+namespace Content.Server._Omu.CollectiveMind;
 
 /// <summary>
 ///    Plays speech sounds when an entity sends a collective mind message.
