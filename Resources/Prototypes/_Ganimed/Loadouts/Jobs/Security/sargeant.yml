@@ -1,0 +1,52 @@
+# Timers
+- type: loadoutEffectGroup
+  id: SargeantSilverBadgeTimer
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Security
+      time: 360000 # 100 hrs
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobSecuritySergeant
+      time: 72000 # 20 hrs
+
+- type: loadoutEffectGroup
+  id: SargeantGoldBadgeTimer
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Security
+      time: 1080000 # 300 hrs
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobSecuritySergeant
+      time: 216000 # 60 hrs
+
+# Loadouts
+- type: loadout
+  id: SargeantBronzeBadge
+  equipment:
+    neck: ClothingNeckSecBadgeSeniorOfficerBronze
+
+- type: loadout
+  id: SargeantSilverBadge
+  equipment:
+    neck: ClothingNeckSecBadgeSeniorOfficerSilver
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SargeantSilverBadgeTimer
+  groupBy: "Sargeant badge"
+
+- type: loadout
+  id: SargeantGoldBadge
+  equipment:
+    neck: ClothingNeckSecBadgeSeniorOfficerGold
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SargeantGoldBadgeTimer
+  groupBy: "Sargeant badge"

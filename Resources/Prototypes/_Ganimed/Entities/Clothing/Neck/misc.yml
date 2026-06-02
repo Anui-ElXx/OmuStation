@@ -1,3 +1,45 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckSecBadgeBronze
+  name: bronze sec badge
+  description: bronze sec badge
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Neck/Specific/bronze_secbadge.rsi
+#  - type: Badge
+#  - type: Tag
+#    tags:
+#    - ADTBadge
+#    - ADTBadgeBronze
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckSecBadgeSilver
+  name: silver sec badge
+  description: silver sec badge
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Neck/Specific/silver_secbadge.rsi
+#  - type: Badge
+#  - type: Tag
+#    tags:
+#    - ADTBadge
+#    - ADTBadgeSilver
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckSecBadgeGold
+  name: gold sec badge
+  description: gold sec badge
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Neck/Specific/gold_secbadge.rsi
+#  - type: Badge
+#  - type: Tag
+#    tags:
+#    - ADTBadge
+#    - ADTBadgeGolden
+
 # Security officer badges
 - type: entity
   parent: ADTClothingNeckSecBadgeBronze
@@ -21,11 +63,11 @@
       - state: bronze-inhand-left
       right:
       - state: bronze-inhand-right
-  - type: Tag
-    tags:
-    - ADTBadge
-    - ADTBadgeBronze
-    - WhitelistChameleon
+#  - type: Tag
+#    tags:
+#    - ADTBadge
+#    - ADTBadgeBronze
+#    - WhitelistChameleon
 
 - type: entity
   parent: ADTClothingNeckSecBadgeSilver
@@ -49,11 +91,11 @@
       - state: silver-inhand-left
       right:
       - state: silver-inhand-right
-  - type: Tag
-    tags:
-    - ADTBadge
-    - ADTBadgeSilver
-    - WhitelistChameleon
+#  - type: Tag
+#    tags:
+#    - ADTBadge
+#    - ADTBadgeSilver
+#    - WhitelistChameleon
 
 - type: entity
   parent: ADTClothingNeckSecBadgeGold
@@ -77,11 +119,11 @@
       - state: gold-inhand-left
       right:
       - state: gold-inhand-right
-  - type: Tag
-    tags:
-    - ADTBadge
-    - ADTBadgeGolden
-    - WhitelistChameleon
+#  - type: Tag
+#    tags:
+#    - ADTBadge
+#    - ADTBadgeGolden
+#    - WhitelistChameleon
 
 # Security cadet badges
 - type: entity
@@ -267,7 +309,7 @@
       - state: brigmedic-equipped-NECK
       - state: gold-equipped-NECK
 
-# Security Sargent badges
+# Security Sargeant badges
 - type: entity
   parent: ClothingNeckSecBadgeOfficerBronze
   id: ClothingNeckSecBadgeSeniorOfficerBronze

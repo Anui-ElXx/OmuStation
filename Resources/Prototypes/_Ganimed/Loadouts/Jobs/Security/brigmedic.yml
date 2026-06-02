@@ -1,0 +1,52 @@
+# Timers
+- type: loadoutEffectGroup
+  id: BrigmedicSilverBadgeTimer
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Security
+      time: 360000 # 100 hrs
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobBrigmedic
+      time: 72000 # 20 hrs
+
+- type: loadoutEffectGroup
+  id: BrigmedicGoldBadgeTimer
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Security
+      time: 1080000 # 300 hrs
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobBrigmedic
+      time: 216000 # 60 hrs
+
+# Loadouts
+- type: loadout
+  id: BrigmedicBronzeBadge
+  equipment:
+    neck: ClothingNeckSecBadgeBrigmedicBronze
+
+- type: loadout
+  id: BrigmedicSilverBadge
+  equipment:
+    neck: ClothingNeckSecBadgeBrigmedicSilver
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: BrigmedicSilverBadgeTimer
+  groupBy: "Brigmedic badge"
+
+- type: loadout
+  id: BrigmedicGoldBadge
+  equipment:
+    neck: ClothingNeckSecBadgeBrigmedicGold
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: BrigmedicGoldBadgeTimer
+  groupBy: "Brigmedic badge"

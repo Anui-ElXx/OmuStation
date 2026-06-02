@@ -1,0 +1,52 @@
+# Timers
+- type: loadoutEffectGroup
+  id: WardenSilverBadgeTimer
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Security
+      time: 360000 # 100 hrs
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobWarden
+      time: 72000 # 20 hrs
+
+- type: loadoutEffectGroup
+  id: WardenGoldBadgeTimer
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Security
+      time: 1080000 # 300 hrs
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobWarden
+      time: 216000 # 60 hrs
+
+# Loadouts
+- type: loadout
+  id: WardenBronzeBadge
+  equipment:
+    neck: ClothingNeckSecBadgeWardenBronze
+
+- type: loadout
+  id: WardenSilverBadge
+  equipment:
+    neck: ClothingNeckSecBadgeWardenSilver
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: WardenSilverBadgeTimer
+  groupBy: "Warden badge"
+
+- type: loadout
+  id: WardenGoldBadge
+  equipment:
+    neck: ClothingNeckSecBadgeWardenGold
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: WardenGoldBadgeTimer
+  groupBy: "Warden badge"
