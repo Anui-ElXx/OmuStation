@@ -166,11 +166,12 @@
       - Shard
   - type: SpeedModifierImmunity
   - type: Rootable
-  - type: EmoteOnFinalDamage
+  - type: EmoteOnFinalDamage # Omu
     damageThreshold: 12
     emoteChance: 0.7
     emotes:
     - Scream
+  - type: ESPainFlash # ES
 
 - type: entity
   parent: BaseSpeciesDummy

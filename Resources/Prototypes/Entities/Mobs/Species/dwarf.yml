@@ -125,6 +125,7 @@
     emoteChance: 0.7
     emotes:
     - Pain
+  - type: ESPainFlash
 
 - type: entity
   parent: BaseSpeciesDummy

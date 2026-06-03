@@ -385,6 +385,7 @@
     emoteChance: 0.7
     emotes:
     - Scream
+  - type: ESPainFlash
 
 - type: entity
   parent: BaseSpeciesDummy
