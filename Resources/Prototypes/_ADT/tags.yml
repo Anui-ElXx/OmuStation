@@ -1,0 +1,11 @@
+- type: Tag
+  id: ADTBadge
+
+- type: Tag
+  id: ADTBadgeBronze
+
+- type: Tag
+  id: ADTBadgeSilver
+
+- type: Tag
+  id: ADTBadgeGolden

@@ -1,50 +1,52 @@
+# Base
 - type: entity
   parent: ClothingNeckBase
   id: ADTClothingNeckSecBadgeBronze
-  name: bronze sec badge
-  description: bronze sec badge
+  name: bronze security badge
+  description: bronze security badge
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Neck/Specific/bronze_secbadge.rsi
-#  - type: Badge
-#  - type: Tag
-#    tags:
-#    - ADTBadge
-#    - ADTBadgeBronze
+    sprite: _ADT/Clothing/Neck/Specific/bronze_secbadge.rsi
+  - type: Badge
+  - type: Tag
+    tags:
+    - ADTBadge
+    - ADTBadgeBronze
 
 - type: entity
   parent: ClothingNeckBase
   id: ADTClothingNeckSecBadgeSilver
-  name: silver sec badge
-  description: silver sec badge
+  name: silver security badge
+  description: silver security badge
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Neck/Specific/silver_secbadge.rsi
-#  - type: Badge
-#  - type: Tag
-#    tags:
-#    - ADTBadge
-#    - ADTBadgeSilver
+    sprite: _ADT/Clothing/Neck/Specific/silver_secbadge.rsi
+  - type: Badge
+  - type: Tag
+    tags:
+    - ADTBadge
+    - ADTBadgeSilver
 
 - type: entity
   parent: ClothingNeckBase
   id: ADTClothingNeckSecBadgeGold
-  name: gold sec badge
-  description: gold sec badge
+  name: gold security badge
+  description: gold security badge
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Neck/Specific/gold_secbadge.rsi
-#  - type: Badge
-#  - type: Tag
-#    tags:
-#    - ADTBadge
-#    - ADTBadgeGolden
+    sprite: _ADT/Clothing/Neck/Specific/gold_secbadge.rsi
+  - type: Badge
+  - type: Tag
+    tags:
+    - ADTBadge
+    - ADTBadgeGolden
 
 # Security officer badges
 - type: entity
   parent: ADTClothingNeckSecBadgeBronze
   id: ClothingNeckSecBadgeOfficerBronze
   name: bronze security officer badge
+  description: A bronze security badge issued to certified Nanotrasen Security Officers
   components:
   - type: Sprite
     sprite: _Ganimed/Clothing/Neck/Misc/sec_badge.rsi
@@ -63,16 +65,17 @@
       - state: bronze-inhand-left
       right:
       - state: bronze-inhand-right
-#  - type: Tag
-#    tags:
-#    - ADTBadge
-#    - ADTBadgeBronze
-#    - WhitelistChameleon
+  - type: Tag
+    tags:
+    - ADTBadge
+    - ADTBadgeBronze
+    - WhitelistChameleon
 
 - type: entity
   parent: ADTClothingNeckSecBadgeSilver
   id: ClothingNeckSecBadgeOfficerSilver
   name: silver security officer badge
+  description: A silver security badge earned through experience and continued service to the station's security
   components:
   - type: Sprite
     sprite: _Ganimed/Clothing/Neck/Misc/sec_badge.rsi
@@ -91,16 +94,17 @@
       - state: silver-inhand-left
       right:
       - state: silver-inhand-right
-#  - type: Tag
-#    tags:
-#    - ADTBadge
-#    - ADTBadgeSilver
-#    - WhitelistChameleon
+  - type: Tag
+    tags:
+    - ADTBadge
+    - ADTBadgeSilver
+    - WhitelistChameleon
 
 - type: entity
   parent: ADTClothingNeckSecBadgeGold
   id: ClothingNeckSecBadgeOfficerGold
   name: gold security officer badge
+  description: The distinguished mark of a veteran of security service. Few survive long enough to receive this badge
   components:
   - type: Sprite
     sprite: _Ganimed/Clothing/Neck/Misc/sec_badge.rsi
@@ -119,11 +123,11 @@
       - state: gold-inhand-left
       right:
       - state: gold-inhand-right
-#  - type: Tag
-#    tags:
-#    - ADTBadge
-#    - ADTBadgeGolden
-#    - WhitelistChameleon
+  - type: Tag
+    tags:
+    - ADTBadge
+    - ADTBadgeGolden
+    - WhitelistChameleon
 
 # Security cadet badges
 - type: entity
